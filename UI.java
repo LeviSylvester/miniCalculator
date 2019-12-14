@@ -19,7 +19,6 @@ class UI {
 
     static Map<String, Button> buttons = new HashMap<>();
     static TextField calculatorTextField = new TextField();
-    static Button buttonEquals = buttons.get("=");
 
     static void setStage(Stage calculatorStage) {
         calculatorStage.setTitle("MiniCalculator");
