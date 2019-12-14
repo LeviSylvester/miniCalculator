@@ -94,13 +94,13 @@ class Function {
         EventHandler<ActionEvent> equalsEvent = event -> {
             Function.mathOperationBetweenTwoNumbers();
         };
-        buttonEquals.setOnAction(equalsEvent);
+        buttons.get("=").setOnAction(equalsEvent);
     }
 
     static void fireEqualsButtonWhenEnterKeyIsPressedOnScene(Scene calculatorScene) {
         calculatorScene.setOnKeyPressed(event -> {
             if (event.getCode() == KeyCode.ENTER) {
-                buttonEquals.fire();
+                buttons.get("=").fire();
             }
         });
     }
