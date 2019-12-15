@@ -64,7 +64,7 @@ class Function {
 
             System.out.println("\n" + calculatorTextField.getText());
 
-        } catch (NumberFormatException e) {
+        } catch (Exception e) {
             calculatorTextField.appendText("☻format!");
             System.out.println("\nWrong number format!");
         }
